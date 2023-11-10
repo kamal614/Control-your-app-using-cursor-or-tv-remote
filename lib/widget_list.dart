@@ -10,6 +10,8 @@ class WidgetList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         children: [
           const Padding(
             padding: EdgeInsets.all(15.0),
@@ -18,6 +20,7 @@ class WidgetList extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
           ),
+          const SizedBox(height: 20),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -120,6 +123,13 @@ class WidgetList extends StatelessWidget {
                         child: const Text("Hello World"))),
               ),
             ],
+          ),
+          const Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Text(
+                "Scroll using cursor hey and press the 'OK' button to see the toast",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
           ),
         ],
       ),
