@@ -127,7 +127,7 @@ class WidgetList extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.all(15.0),
             child: Text(
-                "Scroll using cursor hey and press the 'OK' button to see the toast",
+                "Scroll using cursor and press the 'OK' button to see the toast",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
           ),
